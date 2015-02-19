@@ -1,7 +1,7 @@
-## Docker/fig demo for OSX or linux
+## Docker/fig demo for OSX or Linux
 
 This demo shows how easy it can be to get started with docker in a distributed environment using
-fig for orchestration.
+fig for orchestration.  Setup instructions are included for OSX and Linux
 
 ### Tool setup for everyone:
 [Install Docker here](https://docs.docker.com/installation/mac/)
@@ -11,7 +11,7 @@ fig for orchestration.
 [Install Virtualbox here](https://www.virtualbox.org/wiki/Downloads)
 
 
-### Tool setup for linux:
+### Tool setup for Linux:
 [Install Fig here](http://www.fig.sh/)
 
 
