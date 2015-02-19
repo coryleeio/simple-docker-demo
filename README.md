@@ -11,9 +11,8 @@
 ### Tool setup for OSX:
 [Install boot2docker here](http://boot2docker.io/)
 
-Mac users setup boot2docker
-run the installer... boot2docker
-this will automatically run:
+setup boot2docker by running the installer.
+in the future you will need to start boot2docker manually by running:
 
 `boot2docker start`
 
