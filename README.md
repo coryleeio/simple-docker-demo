@@ -1,7 +1,8 @@
 ## Docker/Fig demo for OSX or Linux
 
 This demo shows how easy it can be to get started with docker in a distributed environment using
-fig for orchestration.  Setup instructions are included for OSX and Linux
+fig for orchestration.  
+Setup instructions are included for OSX and Linux
 
 ### Tool setup for all environments
 
@@ -36,6 +37,7 @@ I put mine at the end of my ~/.bash_profile:
 
 If your on linux you might want to put it in your ~/.bashrc. 
 See this link for a clear explanation of which to use if your unsure:
+
 [Click to read about bashrc vs bash profile](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
   
 Then run:
