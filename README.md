@@ -10,6 +10,7 @@ fig for orchestration.
 
 [Install Virtualbox here](https://www.virtualbox.org/wiki/Downloads)
 
+[Linux users install Fig here](http://www.fig.sh/)
 
 ### Tool setup for OSX:
 [Install boot2docker here](http://boot2docker.io/)
@@ -35,21 +36,14 @@ then run:
 no ssh is needed, just type:
 `docker version` // ---> should see no errors
 
-
-### Docker is functioning, Now lets get fig working:
-#### Fig installation for mac:
 install homebrew
 http://brew.sh/
 
-`brew update`
+`brew update` // You may get 'illegal command: 4' error if you don't do this
 
 `brew install python`
 
 `brew install fig`
-
-
-#### Fig installation for everyone else:
-[Install fig here](http://www.fig.sh/)
 
 
 ### Test Docker:
@@ -60,6 +54,8 @@ http://brew.sh/
 
 `boot2docker ip` // ---> 192.168.59.103
 
+Use the ip address from the previous step in addition to the ports specified in the fig.yml:
+
 `curl 192.168.59.103:5000` // hit webserver 1
 
 `curl 192.168.59.103:5001` // hit webserver 2
@@ -67,7 +63,7 @@ http://brew.sh/
 `curl 192.168.59.103:5002` // hit webserver 3
 
 
-#### Everyone else:
+#### Linux:
 `fig up`
 
 `curl localhost:5000` // hit webserver 1
