@@ -58,18 +58,13 @@ http://brew.sh/
 
 Use the ip address from the previous step in addition to the ports specified in the fig.yml:
 
-`curl 192.168.59.103:5000` // hit webserver 1
-
-`curl 192.168.59.103:5001` // hit webserver 2
-
-`curl 192.168.59.103:5002` // hit webserver 3
+	curl 192.168.59.103:5000 // hit webserver 1
+	curl 192.168.59.103:5001 // hit webserver 2
+	curl 192.168.59.103:5002 // hit webserver 3
 
 
 #### Linux:
-`fig up`
-
-`curl localhost:5000` // hit webserver 1
-
-`curl localhost:5001` // hit webserver 2
-
-`curl localhost:5002` // hit webserver 3
+	fig up
+	curl localhost:5000 // hit webserver 1
+	curl localhost:5001 // hit webserver 2
+	curl localhost:5002 // hit webserver 3
