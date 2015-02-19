@@ -49,7 +49,7 @@ Next we will install homebrew:
 [Install homebrew](http://brew.sh/)
 
 
-It is important to note that if you dont update brew, included below, that you may receive an elusive error: 'illegal command: 4'.  Run the following commands:
+It is important to note that if you dont update brew, included below, that you may receive an elusive error: 'illegal command: 4'.  Run the following commands to install fig:
 
 	$ brew update 
 	$ brew install python
