@@ -59,9 +59,9 @@ No ssh is needed, just type:
 
 Use the ip address from the previous step in addition to the ports specified in the fig.yml:
 
-	$ curl 192.168.59.103:5000 // hit webserver 1
-	$ curl 192.168.59.103:5001 // hit webserver 2
-	$ curl 192.168.59.103:5002 // hit webserver 3
+	$ curl 192.168.59.103:5000 // HTTP Response body from webserver 1
+	$ curl 192.168.59.103:5001 // HTTP Response body from webserver 2
+	$ curl 192.168.59.103:5002 // HTTP Response body from webserver 3
 
 Stop boot2docker with the following command:
 
@@ -70,6 +70,6 @@ Stop boot2docker with the following command:
 
 #### Linux:
 	$ fig up
-	$ curl localhost:5000 // hit webserver 1
-	$ curl localhost:5001 // hit webserver 2
-	$ curl localhost:5002 // hit webserver 3
+	$ curl localhost:5000 // HTTP Response body from webserver 1
+	$ curl localhost:5001 // HTTP Response body from webserver 2
+	$ curl localhost:5002 // HTTP Response body from webserver 3
