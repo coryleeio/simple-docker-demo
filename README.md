@@ -36,9 +36,11 @@ See this link for a clear explanation of which to use if your unsure:
 [Click to read about bashrc vs bash profile](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
   
 Then run:
+
 `$ source ~/.bash_profile`
 
 No ssh is needed, just type:
+
 `$ docker version` // ---> should see no errors
 
 [Install homebrew](http://brew.sh/)
