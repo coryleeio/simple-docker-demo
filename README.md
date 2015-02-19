@@ -49,11 +49,16 @@ brew install fig
 `fig up`
 `boot2docker ip` // ---> 192.168.59.103
 `curl 192.168.59.103:5000` // hit webserver 1
+
 `curl 192.168.59.103:5001` // hit webserver 2
+
 `curl 192.168.59.103:5002` // hit webserver 3
+
 
 #### Everyone else:
 `fig up`
 `curl localhost:5000` // hit webserver 1
+
 `curl localhost:5001` // hit webserver 2
+
 `curl localhost:5002` // hit webserver 3
