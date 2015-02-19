@@ -14,11 +14,13 @@
 Mac users setup boot2docker
 run the installer... boot2docker
 this will automatically run:
+
 `boot2docker start`
 
 boot2docker tells you to export some variables, put them somewhere they'll be run on boot...
 get your own variables from boot2docker start
 in .bash_profile:
+
 `export DOCKER_HOST=tcp://192.168.59.103:2376`
 
 `export DOCKER_CERT_PATH=/Users/corylee/.boot2docker/certs/boot2docker-vm`
