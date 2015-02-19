@@ -3,7 +3,10 @@
 This demo shows how easy it can be to get started with docker in a distributed environment using
 fig for orchestration.  Setup instructions are included for OSX and Linux
 
-### Tool setup for everyone
+### Tool setup for all environments
+
+Visit the links below and install the software as per their instructions
+
 [Install Docker here](https://docs.docker.com/installation/mac/)
 
 [Install Vagrant here](http://www.vagrantup.com/downloads.html)
