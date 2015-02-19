@@ -18,30 +18,30 @@ fig for orchestration.
 ### Tool setup for OSX:
 [Install boot2docker here](http://boot2docker.io/)
 
-setup boot2docker by running the installer.
+Setup boot2docker by running the installer.
 In the future you will need to start boot2docker manually by running:
 
 `boot2docker start`
 
-boot2docker tells you to export some variables when it runs, 
-We need to put them somewhere they'll be exported on boot.
-I put mine at the end of my .bash_profile:
+Boot2docker tells you to export some variables when it runs, 
+we need to put them somewhere they'll be exported on boot.
+I put mine at the end of my ~/.bash_profile:
 
 	export DOCKER_HOST=tcp://192.168.59.103:2376
 	export DOCKER_CERT_PATH=/Users/corylee/.boot2docker/certs/boot2docker-vm
 	export DOCKER_TLS_VERIFY=1
 
-If your on linux you might want to put it in your bashrc, see this link for more discussion, it depends on the use:
+If your on linux you might want to put it in your ~/.bashrc. 
+See this link for a clear explanation of which to use if your unsure:
 [Click to read about bashrc vs bash profile](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
   
-then run:
+Then run:
 `source ~/.bash_profile`
 
-no ssh is needed, just type:
+No ssh is needed, just type:
 `docker version` // ---> should see no errors
 
-install homebrew
-http://brew.sh/
+[Install homebrew](http://brew.sh/)
 
 	brew update // You may get 'illegal command: 4' error if you don't do this
 	brew install python
