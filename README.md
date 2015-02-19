@@ -61,6 +61,10 @@ Use the ip address from the previous step in addition to the ports specified in 
 	curl 192.168.59.103:5001 // hit webserver 2
 	curl 192.168.59.103:5002 // hit webserver 3
 
+Stop boot2docker with the following command:
+
+`boot2docker stop`
+
 
 #### Linux:
 	fig up
