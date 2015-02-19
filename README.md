@@ -1,7 +1,7 @@
 ## Docker/Fig demo for OSX or Linux
 
-This demo shows how easy it can be to get started with docker in a distributed environment using
-fig for orchestration.  
+This demo shows how easy it can be to get started with docker 
+in a distributed environment using fig for orchestration.  
 Setup instructions are included for OSX and Linux
 
 ### Tool setup for all environments
