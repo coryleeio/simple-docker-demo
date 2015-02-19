@@ -56,7 +56,7 @@ It is important to note that if you dont update brew, included below, that you m
 	$ brew install fig
 
 
-### Test Docker:
+### Run the app:
 #### OSX:
 
 	$ boot2docker start
