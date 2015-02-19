@@ -1,5 +1,8 @@
 ## Docker/fig demo for OSX or linux
 
+This demo shows how easy it can be to get started with docker in a distributed environment using
+fig for orchestration.
+
 ### Tool setup for everyone:
 [Install Docker here](https://docs.docker.com/installation/mac/)
 
