@@ -1,0 +1,10 @@
+web1:
+  build: .
+  command: python app.py
+  ports:
+  - "5001:5000"
+  volumes:
+  - .:/code
+  environment:
+  - APP_DB_HOST=redis_1
+  - APP_DB_PORT=6379

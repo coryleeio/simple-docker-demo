@@ -1,13 +1,4 @@
-web:
-  build: .
-  command: python app.py
-  ports:
-  - "5000:5000"
-  volumes:
-  - .:/code
-  links:
-  - redis
-web2:
+web1:
   build: .
   command: python app.py
   ports:
@@ -16,7 +7,10 @@ web2:
   - .:/code
   links:
   - redis
-web3:
+  environment:
+  - APP_DB_HOST=redis_1
+  - APP_DB_PORT=6379
+web2:
   build: .
   command: python app.py
   ports:
@@ -25,5 +19,34 @@ web3:
   - .:/code
   links:
   - redis
+  environment:
+  - APP_DB_HOST=redis_1
+  - APP_DB_PORT=6379
+web3:
+  build: .
+  command: python app.py
+  ports:
+  - "5003:5000"
+  volumes:
+  - .:/code
+  links:
+  - redis
+  environment:
+  - APP_DB_HOST=redis_1
+  - APP_DB_PORT=6379
+web4:
+  build: .
+  command: python app.py
+  ports:
+  - "5004:5000"
+  volumes:
+  - .:/code
+  links:
+  - redis
+  environment:
+  - APP_DB_HOST=redis_1
+  - APP_DB_PORT=6379
 redis:
   image: orchardup/redis
+  ports:
+  - "6379:6379"

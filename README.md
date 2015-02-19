@@ -60,9 +60,10 @@ It is important to note that if you dont update brew, included below, that you m
 
 Use the ip address from the previous step in addition to the ports specified in the fig.yml:
 
-	$ curl 192.168.59.103:5000 // HTTP Response body from webserver 1
-	$ curl 192.168.59.103:5001 // HTTP Response body from webserver 2
-	$ curl 192.168.59.103:5002 // HTTP Response body from webserver 3
+	$ curl 192.168.59.103:5001 // HTTP Response body from webserver 1
+	$ curl 192.168.59.103:5002 // HTTP Response body from webserver 2
+	$ curl 192.168.59.103:5003 // HTTP Response body from webserver 3
+	$ curl 192.168.59.103:5004 // HTTP Response body from webserver 4
 
 Stop boot2docker with the following command:
 
@@ -71,6 +72,12 @@ Stop boot2docker with the following command:
 
 #### Linux
 	$ fig up
-	$ curl localhost:5000 // HTTP Response body from webserver 1
-	$ curl localhost:5001 // HTTP Response body from webserver 2
-	$ curl localhost:5002 // HTTP Response body from webserver 3
+	$ curl localhost:5001 // HTTP Response body from webserver 1
+	$ curl localhost:5002 // HTTP Response body from webserver 2
+	$ curl localhost:5003 // HTTP Response body from webserver 3
+	$ curl localhost:5004 // HTTP Response body from webserver 4
+
+
+#### Why did you use links and environment variables instead of just relying on the links?
+
+This fig.yml is intended for a development environment.  In production you may use mutiple docker hosts to deploy.  I deal with multi host orchestration by simply providing a fig.yml for production. Usually i would exclude this from the codebase.  An example of a production webserver can be found in fig-production-example.yml.  Since the db in production resides in an external host, we cant use native docker linking.  Using an environment variable to specify the DB host and DB port allows us to use a remote DB without changing the app code or checking in a configuration file for each environment. (Only fig.yml for development gets checked in).  If you dont like this, just change the app.py db host to 'redis_1' and the port to '6379' and remove the environment variables from the fig.yml.
