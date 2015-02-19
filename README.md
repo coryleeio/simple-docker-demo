@@ -23,6 +23,7 @@ Visit the links below and install the software as per their instructions:
 [Install boot2docker here](http://boot2docker.io/)
 
 Setup boot2docker by running the installer.
+
 In the future you will need to start boot2docker manually by running:
 
 `$ boot2docker start`
