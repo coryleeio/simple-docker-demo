@@ -48,5 +48,3 @@ web4:
   - APP_DB_PORT=6379
 redis:
   image: orchardup/redis
-  ports:
-  - "6379:6379"
