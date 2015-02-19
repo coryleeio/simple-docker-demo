@@ -10,6 +10,7 @@
 
 ### Tool setup for OSX:
 [Install boot2docker here](http://boot2docker.io/)
+
 Mac users setup boot2docker
 run the installer... boot2docker
 this will automatically run:
