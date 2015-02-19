@@ -19,13 +19,12 @@ fig for orchestration.
 [Install boot2docker here](http://boot2docker.io/)
 
 setup boot2docker by running the installer.
-in the future you will need to start boot2docker manually by running:
+In the future you will need to start boot2docker manually by running:
 
 `boot2docker start`
 
-boot2docker tells you to export some variables, put them somewhere they'll be run on boot...
-get your own variables from boot2docker start
-in .bash_profile:
+boot2docker tells you to export some variables when it runs, We need to put them somewhere they'll be exported on boot.
+I put mine in my .bash_profile:
 
 `export DOCKER_HOST=tcp://192.168.59.103:2376`
 
