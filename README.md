@@ -10,7 +10,10 @@ fig for orchestration.
 
 [Install Virtualbox here](https://www.virtualbox.org/wiki/Downloads)
 
-[Linux users install Fig here](http://www.fig.sh/)
+
+### Tool setup for linux:
+[Install Fig here](http://www.fig.sh/)
+
 
 ### Tool setup for OSX:
 [Install boot2docker here](http://boot2docker.io/)
