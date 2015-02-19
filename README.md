@@ -43,6 +43,8 @@ No ssh is needed, just type:
 
 `$ docker version` // ---> should see no errors
 
+Next we will install homebrew:
+
 [Install homebrew](http://brew.sh/)
 
 	$ brew update // You may get 'illegal command: 4' error if you don't do this
