@@ -23,14 +23,16 @@ In the future you will need to start boot2docker manually by running:
 
 `boot2docker start`
 
-boot2docker tells you to export some variables when it runs, We need to put them somewhere they'll be exported on boot.
-I put mine in my .bash_profile:
+boot2docker tells you to export some variables when it runs, 
+We need to put them somewhere they'll be exported on boot.
+I put mine at the end of my .bash_profile:
 
-`export DOCKER_HOST=tcp://192.168.59.103:2376`
+	export DOCKER_HOST=tcp://192.168.59.103:2376
+	export DOCKER_CERT_PATH=/Users/corylee/.boot2docker/certs/boot2docker-vm
+	export DOCKER_TLS_VERIFY=1
 
-`export DOCKER_CERT_PATH=/Users/corylee/.boot2docker/certs/boot2docker-vm`
-
-`export DOCKER_TLS_VERIFY=1`
+If your on linux you might want to put it in your bashrc, see this link for more discussion, it depends on the use:
+[Click to read about bashrc vs bash profile](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
   
 then run:
 `source ~/.bash_profile`
@@ -41,20 +43,17 @@ no ssh is needed, just type:
 install homebrew
 http://brew.sh/
 
-`brew update` // You may get 'illegal command: 4' error if you don't do this
-
-`brew install python`
-
-`brew install fig`
+	brew update // You may get 'illegal command: 4' error if you don't do this
+	brew install python
+	brew install fig
 
 
 ### Test Docker:
 #### OSX:
-`boot2docker start`
 
-`fig up`
-
-`boot2docker ip` // ---> 192.168.59.103
+	boot2docker start
+	fig up
+	boot2docker ip // ---> 192.168.59.103
 
 Use the ip address from the previous step in addition to the ports specified in the fig.yml:
 
