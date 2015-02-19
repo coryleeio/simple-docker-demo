@@ -3,7 +3,7 @@
 This demo shows how easy it can be to get started with docker in a distributed environment using
 fig for orchestration.  Setup instructions are included for OSX and Linux
 
-### Tool setup for everyone:
+### Tool setup for everyone
 [Install Docker here](https://docs.docker.com/installation/mac/)
 
 [Install Vagrant here](http://www.vagrantup.com/downloads.html)
@@ -11,11 +11,11 @@ fig for orchestration.  Setup instructions are included for OSX and Linux
 [Install Virtualbox here](https://www.virtualbox.org/wiki/Downloads)
 
 
-### Tool setup for Linux:
+### Tool setup for Linux
 [Install Fig here](http://www.fig.sh/)
 
 
-### Tool setup for OSX:
+### Tool setup for OSX
 [Install boot2docker here](http://boot2docker.io/)
 
 Setup boot2docker by running the installer.
@@ -56,8 +56,8 @@ It is important to note that if you dont update brew, included below, that you m
 	$ brew install fig
 
 
-### Run the app:
-#### OSX:
+### Run the app
+#### OSX
 
 	$ boot2docker start
 	$ fig up
@@ -74,7 +74,7 @@ Stop boot2docker with the following command:
 `$ boot2docker stop`
 
 
-#### Linux:
+#### Linux
 	$ fig up
 	$ curl localhost:5000 // HTTP Response body from webserver 1
 	$ curl localhost:5001 // HTTP Response body from webserver 2
