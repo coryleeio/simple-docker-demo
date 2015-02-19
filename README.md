@@ -39,8 +39,6 @@ Then run:
 
 `$ source ~/.bash_profile`
 
-No ssh is needed, just type:
-
 `$ docker version` // ---> should see no errors
 
 
