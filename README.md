@@ -2,7 +2,9 @@
 
 ### Tool setup for everyone:
 [Install Docker here](https://docs.docker.com/installation/mac/)
+
 [Install Vagrant here](http://www.vagrantup.com/downloads.html)
+
 [Install Virtualbox here](https://www.virtualbox.org/wiki/Downloads)
 
 
