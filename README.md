@@ -19,7 +19,9 @@ boot2docker tells you to export some variables, put them somewhere they'll be ru
 get your own variables from boot2docker start
 in .bash_profile:
 `export DOCKER_HOST=tcp://192.168.59.103:2376`
+
 `export DOCKER_CERT_PATH=/Users/corylee/.boot2docker/certs/boot2docker-vm`
+
 `export DOCKER_TLS_VERIFY=1`
   
 then run:
@@ -34,9 +36,11 @@ no ssh is needed, just type:
 install homebrew
 http://brew.sh/
 
-brew update
-brew install python
-brew install fig
+`brew update`
+
+`brew install python`
+
+`brew install fig`
 
 
 #### Fig installation for everyone else:
@@ -46,8 +50,11 @@ brew install fig
 ### Test Docker:
 #### OSX:
 `boot2docker start`
+
 `fig up`
+
 `boot2docker ip` // ---> 192.168.59.103
+
 `curl 192.168.59.103:5000` // hit webserver 1
 
 `curl 192.168.59.103:5001` // hit webserver 2
@@ -57,6 +64,7 @@ brew install fig
 
 #### Everyone else:
 `fig up`
+
 `curl localhost:5000` // hit webserver 1
 
 `curl localhost:5001` // hit webserver 2
