@@ -5,7 +5,7 @@ fig for orchestration.  Setup instructions are included for OSX and Linux
 
 ### Tool setup for all environments
 
-Visit the links below and install the software as per their instructions
+Visit the links below and install the software as per their instructions:
 
 [Install Docker here](https://docs.docker.com/installation/mac/)
 
