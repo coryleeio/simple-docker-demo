@@ -34,11 +34,6 @@ I put mine at the end of my ~/.bash_profile:
 	$ export DOCKER_HOST=tcp://192.168.59.103:2376
 	$ export DOCKER_CERT_PATH=/Users/corylee/.boot2docker/certs/boot2docker-vm
 	$ export DOCKER_TLS_VERIFY=1
-
-If your on linux you might want to put it in your ~/.bashrc. 
-See this link for a clear explanation of which to use if your unsure:
-
-[Click to read about bashrc vs bash profile](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
   
 Then run:
 
