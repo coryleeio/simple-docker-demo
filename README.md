@@ -37,10 +37,8 @@ I put mine at the end of my ~/.bash_profile:
   
 Then run:
 
-`$ source ~/.bash_profile`
-
-`$ docker version` // ---> should see no errors
-
+	$ source ~/.bash_profile
+	$ docker version // ---> should see no errors
 
 Next we will install homebrew:
 
