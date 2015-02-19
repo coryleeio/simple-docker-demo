@@ -8,7 +8,7 @@ web1:
   links:
   - redis
   environment:
-  - APP_DB_HOST=redis_1
+  - APP_DB_HOST=192.168.59.103
   - APP_DB_PORT=6379
 web2:
   build: .
@@ -20,7 +20,7 @@ web2:
   links:
   - redis
   environment:
-  - APP_DB_HOST=redis_1
+  - APP_DB_HOST=192.168.59.103
   - APP_DB_PORT=6379
 web3:
   build: .
@@ -32,7 +32,7 @@ web3:
   links:
   - redis
   environment:
-  - APP_DB_HOST=redis_1
+  - APP_DB_HOST=192.168.59.103
   - APP_DB_PORT=6379
 web4:
   build: .
@@ -44,7 +44,7 @@ web4:
   links:
   - redis
   environment:
-  - APP_DB_HOST=redis_1
+  - APP_DB_HOST=192.168.59.103
   - APP_DB_PORT=6379
 redis:
   image: orchardup/redis
